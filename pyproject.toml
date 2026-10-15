@@ -1,0 +1,46 @@
+[project]
+name = "gamekb"
+version = "3.0.0"
+description = "Configure the GAMEKB-K17 / HCY-K017 (SDCX/SDINNOVATION, USB 0816:0220) macropad: remaps, firmware macros, per-key RGB"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Denis Darkin" }]
+requires-python = ">=3.11"
+keywords = ["macropad", "keyboard", "hid", "sdcx", "sdinnovation", "gamekb", "gamekb-k17", "hcy-k017", "kuaijiejianpan", "0816:0220", "reverse-engineering"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Hardware :: Hardware Drivers",
+    "Environment :: Console",
+]
+dependencies = [
+    "hidapi",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/dvdarkin/gamekb-k17"
+Issues = "https://github.com/dvdarkin/gamekb-k17/issues"
+
+[project.scripts]
+gamekb = "gamekb.cli:run"
+
+[tool.setuptools.packages.find]
+include = ["gamekb*"]
+
+[tool.mypy]
+strict = true
+packages = ["gamekb"]
+
+[[tool.mypy.overrides]]
+module = "hid"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

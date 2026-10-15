@@ -1,0 +1,27 @@
+{
+  "lighting": { "mode": "per-key", "brightness": 4 },
+  "default_color": [0, 0, 0],
+  "keys": {
+    "Q":       { "shortcut": "Alt+T", "color": [160, 60, 255] },
+    "W":       { "color": [50, 50, 55] },
+    "E":       { "key": "Enter", "color": [0, 200, 40] },
+    "R":       { "color": [50, 50, 55] },
+    "Mute":    { "color": [0, 200, 200] },
+    "Tab":     { "key": "Tab", "color": [60, 120, 255] },
+    "A":       { "key": "Escape", "color": [255, 40, 20] },
+    "S":       { "shortcut": "Ctrl+C", "color": [180, 20, 10] },
+    "D":       { "shortcut": "Ctrl+Z", "color": [120, 10, 5] },
+    "F":       { "key": "Up", "color": [200, 200, 220] },
+    "Vol+":    { "color": [0, 200, 200] },
+    "LShift":  { "shortcut": "Shift+Tab", "color": [255, 60, 150] },
+    "Z":       { "shortcut": "Ctrl+C", "color": [100, 255, 100] },
+    "X":       { "shortcut": "Ctrl+V", "color": [0, 220, 220] },
+    "C":       { "shortcut": "Ctrl+O", "color": [0, 180, 40] },
+    "V":       { "key": "Down", "color": [200, 200, 220] },
+    "Vol-":    { "color": [0, 200, 200] },
+    "Bright+": { "color": [60, 60, 60] },
+    "Bright-": { "color": [60, 60, 60] },
+    "Space":   { "macro": "yes{Enter}", "color": [0, 255, 60] },
+    "FN":      { "color": [60, 120, 255] }
+  }
+}
