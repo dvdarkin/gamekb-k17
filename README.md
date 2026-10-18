@@ -1,5 +1,7 @@
 # gamekb-k17
 
+[![Featured by Awesome REA](https://raw.githubusercontent.com/reacher-z/Awesome-REA/477658fa73f6860e86cd1fc526657c2efdc25194/assets/featured-by-awesome-rea-inline.svg)](https://awesomerea.org/resources/gamekb-k17-case/)
+
 ![The GAMEKB-K17 macropad, half photo, half blueprint](docs/img/banner.png)
 
 Open-source configuration tool for the **GAMEKB-K17** macropad (model label **HCY-K017**, USB
